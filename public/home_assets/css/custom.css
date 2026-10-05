@@ -1,0 +1,1746 @@
+span.span-title {
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+span.span-title-white {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600; 
+        max-width: 245px;
+}
+
+span.span-title-white a{
+    color: #fff;
+}
+
+
+span.span-title-black {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600; 
+   
+    font-weight: 600;
+}
+
+span.span-title-black a{
+    color: #0c1e21;
+}
+
+
+span.span-title-choose {
+   
+    font-size: 20px;
+    font-weight: 600; 
+    
+}
+
+span.span-testimonials {
+    display: flex;
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+}
+
+span.span-footer-title {
+    font-size: 20px;
+    color: #0C1E21;
+    font-weight: 600;
+   
+}
+
+ul.footer-link {
+    margin-top: 40px;
+}
+
+
+span.span-newsletter-title {
+    font-size: 26px;
+    color: #0C1E21;
+    font-weight: 600;
+}
+
+.subscribe-form {
+   
+    margin-top: 20px;
+}
+
+
+.span-title-black{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.span-title-black a{
+    color: #0C1E21 !important;
+    text-decoration: none;
+}
+
+.span-title-black a:hover{
+    color: #0C1E21 !important;
+}
+
+
+span.uw2-title {
+    display: flex;
+}
+
+
+span.blog-title {
+    font-size: 20px;
+    color: #000;
+}
+
+
+/* Outstanding Results section */
+
+.tj-outstanding-section {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--tj-ff-body);
+    background: linear-gradient(180deg, var(--tj-color-common-white) 0%, var(--tj-color-grey-1) 100%);
+}
+
+.tj-outstanding-section::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    inset-inline-end: -110px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(45, 60, 123, 0.09), transparent);
+    pointer-events: none;
+}
+
+.tj-outstanding-section::after {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    inset-inline-start: -130px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(45, 60, 123, 0.08), transparent);
+    pointer-events: none;
+}
+
+.tj-outstanding-section .container {
+    position: relative;
+    z-index: 1;
+   
+}
+
+.tj-outstanding-section .sec-heading-wrap {
+    margin-bottom: 44px;
+}
+
+.tj-outstanding-section .sec-title,
+.tj-outstanding-section .or-eyebrow {
+    font-family: var(--tj-ff-heading);
+}
+
+@keyframes orPanelFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Per-category accent, reusing this project's existing Google accent palette
+   (see .google-blue / .google-red / .google-yellow / .google-green in main.css).
+   Categories are managed dynamically in the admin, so the accent cycles by
+   position (1st, 5th, 9th... = blue; 2nd, 6th... = red, etc.) instead of
+   being tied to a fixed category name. */
+
+.tj-outstanding-section .or-tab-btn:nth-of-type(4n+1),
+.tj-outstanding-section .or-panel:nth-of-type(4n+1) {
+    --or-accent: #2d3c7b;
+    --or-accent-soft: rgba(45, 60, 123, 0.1);
+}
+
+.tj-outstanding-section .or-tab-btn:nth-of-type(4n+2),
+.tj-outstanding-section .or-panel:nth-of-type(4n+2) {
+    --or-accent: #EA4335;
+    --or-accent-soft: rgba(234, 67, 53, 0.1);
+}
+
+.tj-outstanding-section .or-tab-btn:nth-of-type(4n+3),
+.tj-outstanding-section .or-panel:nth-of-type(4n+3) {
+    --or-accent: #FBBC05;
+    --or-accent-soft: rgba(251, 188, 5, 0.14);
+}
+
+.tj-outstanding-section .or-tab-btn:nth-of-type(4n+4),
+.tj-outstanding-section .or-panel:nth-of-type(4n+4) {
+    --or-accent: var(--tj-color-theme-primary);
+    --or-accent-soft: rgba(45, 60, 123, 0.1);
+}
+
+.tj-outstanding-section .or-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.tj-outstanding-section .or-tab-btn {
+    padding: 13px 26px;
+    border: 1.5px solid var(--tj-color-border-1);
+    border-radius: 999px;
+    background: var(--tj-color-common-white);
+    color: var(--tj-color-text-body);
+    font-size: 15px;
+    font-weight: var(--tj-fw-sbold);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.tj-outstanding-section .or-tab-btn:hover {
+    border-color: var(--or-accent);
+    color: var(--or-accent);
+}
+
+.tj-outstanding-section .or-tab-btn.active {
+    background: var(--or-accent);
+    border-color: var(--or-accent);
+    color: var(--tj-color-common-white);
+    box-shadow: 0 12px 24px -12px var(--or-accent);
+}
+
+.tj-outstanding-section .or-panels {
+    width: 100%;
+}
+
+.tj-outstanding-section .or-panel {
+    display: none;
+    border: 1px solid var(--or-accent-soft);
+    background: linear-gradient(180deg, var(--or-accent-soft) 0%, var(--tj-color-common-white) 260px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 24px 60px -36px rgba(12, 30, 33, 0.25);
+}
+
+.tj-outstanding-section .or-panel.active {
+    display: block;
+    animation: orPanelFadeIn 0.35s ease;
+}
+
+.tj-outstanding-section .or-panel-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 260px;
+    border: 1px dashed var(--tj-color-border-1);
+    border-radius: 8px;
+    color: var(--tj-color-theme-dark-4);
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+.tj-outstanding-section .or-panel-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1.5fr;
+    gap: 48px;
+}
+
+.tj-outstanding-section .or-panel-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.tj-outstanding-section .or-website-tag {
+    align-self: flex-start;
+    display: inline-block;
+    padding: 7px 14px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    background: var(--tj-color-common-white);
+    border: 1px solid var(--tj-color-border-1);
+    color: var(--tj-color-text-body);
+    font-size: 13px;
+    font-weight: var(--tj-fw-medium);
+}
+
+.tj-outstanding-section .or-eyebrow {
+    font-size: 13px;
+    font-weight: var(--tj-fw-bold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--tj-color-theme-dark-4);
+    margin: 0 0 10px;
+}
+
+.tj-outstanding-section .or-panel-left .or-eyebrow:not(:first-child) {
+    margin-top: 26px;
+}
+
+.tj-outstanding-section .or-block-text {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--tj-color-text-body);
+    margin-bottom: 0;
+}
+
+.tj-outstanding-section .or-result-percentage {
+    font-size: 52px;
+    font-weight: var(--tj-fw-black);
+    font-family: var(--tj-ff-heading);
+    color: var(--or-accent);
+    line-height: 1;
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
+}
+
+.tj-outstanding-section .or-keyword-table-wrap {
+    margin-top: 24px;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid var(--tj-color-border-1);
+}
+
+.tj-outstanding-section .or-keyword-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--tj-color-common-white);
+}
+
+.tj-outstanding-section .or-keyword-table thead th {
+    background: var(--or-accent);
+    color: var(--tj-color-common-white);
+    font-size: 13px;
+    font-weight: var(--tj-fw-sbold);
+    text-align: left;
+    padding: 13px 18px;
+}
+
+.tj-outstanding-section .or-keyword-table thead th:last-child {
+    text-align: right;
+}
+
+.tj-outstanding-section .or-keyword-table tbody td {
+    padding: 13px 18px;
+    font-size: 14px;
+    color: var(--tj-color-text-body);
+    border-top: 1px solid var(--tj-color-border-1);
+}
+
+.tj-outstanding-section .or-keyword-table tbody td:last-child {
+    text-align: right;
+    font-weight: var(--tj-fw-bold);
+    color: var(--tj-color-heading-primary);
+}
+
+.tj-outstanding-section .or-keyword-table tbody tr:nth-child(odd) {
+    background: var(--tj-color-grey-1);
+}
+
+.tj-outstanding-section .or-panel-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.tj-outstanding-section .or-analytics-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--tj-color-common-white);
+    border: 1px solid var(--tj-color-border-1);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 24px -16px rgba(12, 30, 33, 0.25);
+}
+
+/* Uploaded screenshots come in whatever aspect ratio the admin captured
+   them in (some are portrait phone screenshots) — a fixed-ratio, cropped
+   frame keeps every card the same shape instead of some stretching very
+   tall and throwing off the row. */
+.tj-outstanding-section .or-analytics-img {
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    display: block;
+}
+
+.tj-outstanding-section .or-analytics-empty {
+    flex: 1;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--tj-color-border-1);
+    border-radius: 8px;
+    color: var(--tj-color-theme-dark-4);
+    font-size: 14px;
+    text-align: center;
+    padding: 16px;
+}
+
+.tj-outstanding-section .or-case-study-link {
+    align-self: flex-end;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: var(--or-accent);
+    font-weight: var(--tj-fw-bold);
+    font-size: 15px;
+    transition: gap 0.2s ease;
+}
+
+.tj-outstanding-section .or-case-study-link:hover {
+    gap: 12px;
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .tj-outstanding-section .or-panel-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .tj-outstanding-section .or-tab-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .tj-outstanding-section .or-panel {
+        padding: 22px;
+    }
+
+    .tj-outstanding-section .or-result-percentage {
+        font-size: 38px;
+    }
+}
+
+
+/* Clients Recommend Us (video testimonials) section.
+   Sits directly above the Client Reviews section below, and both used to
+   render on the plain body background with nothing to tell them apart —
+   this gets a clean white canvas so the dark video cards pop; reviews
+   gets a tinted panel below, so the two read as distinct modules. */
+
+.tj-video-testimonial-section .container {
+    max-width: 1140px;
+    position: relative;
+    z-index: 1;
+}
+
+.tj-video-testimonial-section {
+    position: relative;
+    font-family: var(--tj-ff-body);
+    background: var(--tj-color-common-white);
+}
+
+.tj-video-testimonial-section .sec-title {
+    font-family: var(--tj-ff-heading);
+}
+
+.tj-video-testimonial-section .cr-heading-wrap {
+    max-width: 680px;
+    margin: 0 auto 44px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tj-video-testimonial-section .cr-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 16px;
+    margin-bottom: 20px;
+    border-radius: 999px;
+    background: var(--tj-color-common-white);
+    border: 1px solid var(--tj-color-border-1);
+    color: var(--tj-color-theme-primary);
+    font-size: 12px;
+    font-weight: var(--tj-fw-bold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.tj-video-testimonial-section .cr-badge-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--tj-color-theme-primary);
+}
+
+.tj-video-testimonial-section .sec-title {
+    margin-bottom: 16px;
+}
+
+.tj-video-testimonial-section .desc {
+    margin-bottom: 0;
+}
+
+.tj-video-testimonial-section .cr-slider {
+    position: relative;
+}
+
+.tj-video-testimonial-section .cr-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--tj-color-common-white);
+    border: 1px solid var(--tj-color-border-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tj-color-heading-primary);
+    box-shadow: 0 8px 20px -10px rgba(12, 30, 33, 0.35);
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.25s ease;
+}
+
+.tj-video-testimonial-section .cr-nav:hover:not(:disabled) {
+    background: var(--tj-color-theme-primary);
+    border-color: var(--tj-color-theme-primary);
+    color: var(--tj-color-common-white);
+}
+
+.tj-video-testimonial-section .cr-nav:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.tj-video-testimonial-section .cr-nav-prev {
+    left: 0;
+}
+
+.tj-video-testimonial-section .cr-nav-next {
+    right: 0;
+}
+
+.tj-video-testimonial-section .cr-viewport {
+    overflow: hidden;
+    margin: 0 62px;
+}
+
+.tj-video-testimonial-section .cr-track {
+    display: flex;
+    gap: 28px;
+    transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.tj-video-testimonial-section .cr-card {
+    flex: 0 0 calc(33.333% - 19px);
+    min-width: 0;
+}
+
+@media (max-width: 991px) {
+    .tj-video-testimonial-section .cr-card {
+        flex: 0 0 calc(50% - 14px);
+    }
+}
+
+@media (max-width: 575px) {
+    .tj-video-testimonial-section .cr-card {
+        flex: 0 0 100%;
+    }
+}
+
+.tj-video-testimonial-section .cr-media {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--tj-color-grey-1);
+    border: 1px solid var(--tj-color-border-1);
+    box-shadow: 0 16px 40px -22px rgba(12, 30, 33, 0.28);
+}
+
+.tj-video-testimonial-section .cr-video,
+.tj-video-testimonial-section .cr-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tj-video-testimonial-section .cr-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.78) 100%);
+    pointer-events: none;
+}
+
+.tj-video-testimonial-section .cr-quote-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    opacity: 0.9;
+}
+
+.tj-video-testimonial-section .cr-play-btn {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.94);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    transition: transform 0.2s ease;
+}
+
+.tj-video-testimonial-section .cr-play-btn:hover {
+    transform: scale(1.1);
+}
+
+.tj-video-testimonial-section .cr-play-btn svg {
+    margin-left: 2px;
+}
+
+.tj-video-testimonial-section .cr-media.is-playing .cr-play-btn,
+.tj-video-testimonial-section .cr-media.is-playing .cr-quote-icon,
+.tj-video-testimonial-section .cr-media.is-playing .cr-overlay,
+.tj-video-testimonial-section .cr-media.is-playing .cr-caption {
+    display: none;
+}
+
+.tj-video-testimonial-section .cr-caption {
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    right: 18px;
+    pointer-events: none;
+}
+
+.tj-video-testimonial-section .cr-name {
+    color: var(--tj-color-common-white);
+    font-size: 17px;
+    font-weight: var(--tj-fw-bold);
+    line-height: 1.3;
+}
+
+.tj-video-testimonial-section .cr-role {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.tj-video-testimonial-section .cr-dots {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 36px auto 0;
+    width: 220px;
+}
+
+.tj-video-testimonial-section .cr-dot {
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: var(--tj-color-border-1);
+    transition: background 0.2s ease;
+}
+
+.tj-video-testimonial-section .cr-dot.active {
+    background: var(--tj-color-theme-primary);
+}
+
+
+/* Awards & Recognition: symmetric cards (all same size, no featured card).
+   Grid items already stretch to equal height by default; this just pins
+   each card's footer to the bottom so cards with shorter award names still
+   line up evenly with their neighbors. */
+
+.awd-grid-symmetric .awd-card {
+    height: 100%;
+    min-height: 220px;
+}
+
+.awd-grid-symmetric .awd-card-footer {
+    margin-top: auto;
+}
+
+
+/* Client Reviews (Clutch / Trustpilot / Google) section.
+   Follows the video testimonials section right above (now white) — this
+   gets a tinted panel of its own, with soft glows in each platform's
+   brand color, so the two back-to-back sections don't blur into one. */
+
+.tj-client-reviews-section {
+    position: relative;
+    overflow: hidden;
+    font-family: var(--tj-ff-body);
+    background: linear-gradient(180deg, var(--tj-color-grey-1) 0%, var(--tj-color-common-white) 100%);
+}
+
+.tj-client-reviews-section::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    inset-inline-start: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(0, 182, 122, 0.10), transparent);
+    pointer-events: none;
+}
+
+.tj-client-reviews-section::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    inset-inline-end: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(66, 133, 244, 0.10), transparent);
+    pointer-events: none;
+}
+
+.tj-client-reviews-section .container {
+    position: relative;
+    z-index: 1;
+  
+}
+
+.tj-client-reviews-section .sec-title {
+    font-family: var(--tj-ff-heading);
+}
+
+.tj-client-reviews-section .crv-heading-wrap {
+    max-width: 620px;
+    margin: 0 auto 44px;
+    text-align: center;
+}
+
+.tj-client-reviews-section .sec-title {
+    margin-bottom: 16px;
+}
+
+.tj-client-reviews-section .sec-title span {
+    color: var(--tj-color-theme-primary);
+}
+
+.tj-client-reviews-section .desc {
+    margin-bottom: 0;
+}
+
+/* ── Trust wall: 3 big static cards, one per review platform ── */
+
+.tj-client-reviews-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.tj-client-reviews-section::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    width: 900px;
+    height: 480px;
+    transform: translateX(-50%);
+    background: radial-gradient(closest-side, rgba(45, 60, 123, 0.07), transparent);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.tj-client-reviews-section .crv-slider {
+    position: relative;
+    z-index: 1;
+}
+
+.tj-client-reviews-section .crv-card-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    align-items: stretch;
+}
+
+.tj-client-reviews-section .crv-card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: var(--tj-color-common-white);
+    border-radius: 24px;
+    border: 1px solid rgba(12, 30, 33, 0.06);
+    box-shadow: 0 24px 60px -34px rgba(12, 30, 33, 0.3);
+    padding: 40px 34px 34px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(.2,.8,.2,1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tj-client-reviews-section .crv-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--crv-color);
+}
+
+.tj-client-reviews-section .crv-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--crv-color);
+    box-shadow: 0 34px 70px -30px color-mix(in srgb, var(--crv-color) 45%, transparent);
+}
+
+.tj-client-reviews-section .crv-card-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.tj-client-reviews-section .crv-platform-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, var(--crv-color) 10%, transparent);
+    margin-bottom: 14px;
+}
+
+.tj-client-reviews-section .crv-platform-letter {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--crv-color);
+}
+
+.tj-client-reviews-section .crv-platform-name {
+    font-size: 20px;
+    font-weight: var(--tj-fw-bold);
+    color: var(--tj-color-heading-primary);
+}
+
+.tj-client-reviews-section .crv-verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+    padding: 3px 11px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--crv-color) 10%, transparent);
+    color: var(--crv-color);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.tj-client-reviews-section .crv-verified svg {
+    width: 11px;
+    height: 11px;
+}
+
+/* Uploaded screenshots (Trustpilot/Google/Clutch) come in whatever size
+   was captured — landscape widget grabs, tall portrait phone screenshots,
+   etc. A fixed-size frame with object-fit:contain keeps every screenshot
+   fully visible and sized to the card instead of stretching or spilling
+   past it, whatever its native dimensions are. */
+.tj-client-reviews-section .crv-screenshot {
+    width: 100%;
+    flex: 1;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--tj-color-grey-1);
+    border: 1px solid rgba(12, 30, 33, 0.06);
+}
+
+.tj-client-reviews-section .crv-screenshot img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.tj-client-reviews-section .crv-screenshot-empty {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--tj-color-border-1);
+    border-radius: 12px;
+    color: var(--tj-color-theme-dark-4);
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    background: var(--tj-color-grey-1);
+}
+
+@media (max-width: 991px) {
+    .tj-client-reviews-section .crv-card-wrap {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 460px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .tj-client-reviews-section .crv-card {
+        padding: 32px 22px 24px;
+    }
+
+    .tj-client-reviews-section .crv-screenshot {
+        min-height: 260px;
+    }
+}
+
+
+/* Get To Know Us (services page) */
+
+.tj-gtku-section .gtku-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 56px;
+    align-items: center;
+}
+
+/* No image uploaded: single centered column instead of an empty image box */
+.tj-gtku-section .gtku-grid.gtku-no-image {
+    grid-template-columns: 1fr;
+}
+
+.tj-gtku-section .gtku-no-image .gtku-content-col {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tj-gtku-section .gtku-stat-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+    margin: 8px 0 22px;
+    padding: 14px 22px;
+    border: 1px solid var(--tj-color-border-1);
+    border-radius: 14px;
+}
+
+.tj-gtku-section .gtku-image-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    background: var(--tj-color-grey-1);
+}
+
+.tj-gtku-section .gtku-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tj-gtku-section .gtku-stat-badge {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: var(--tj-color-common-white);
+    border-radius: 16px;
+    padding: 18px 22px;
+    box-shadow: 0 16px 40px -18px rgba(12, 30, 33, 0.4);
+    text-align: center;
+    min-width: 130px;
+}
+
+.tj-gtku-section .gtku-stat-number {
+    font-family: var(--tj-ff-heading);
+    font-size: 34px;
+    font-weight: var(--tj-fw-bold);
+    color: var(--tj-color-theme-primary);
+    line-height: 1;
+}
+
+.tj-gtku-section .gtku-stat-number sup {
+    font-size: 18px;
+    top: -0.6em;
+}
+
+.tj-gtku-section .gtku-stat-label {
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--tj-color-text-body);
+    line-height: 1.4;
+}
+
+.tj-gtku-section .gtku-content-col .sub-title {
+    margin-bottom: 18px;
+}
+
+.tj-gtku-section .gtku-content-col .sec-title {
+    margin-bottom: 20px;
+}
+
+.tj-gtku-section .gtku-content-col .desc {
+    margin-bottom: 14px;
+}
+
+.tj-gtku-section .gtku-content-col .desc:last-of-type {
+    margin-bottom: 0;
+}
+
+.tj-gtku-section .gtku-btn-wrap {
+    margin-top: 26px;
+}
+
+@media (max-width: 991px) {
+    .tj-gtku-section .gtku-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .tj-gtku-section .gtku-image-frame {
+        aspect-ratio: 16 / 10;
+    }
+}
+
+@media (max-width: 480px) {
+    .tj-gtku-section .gtku-stat-badge {
+        right: 14px;
+        bottom: 14px;
+        padding: 14px 16px;
+        min-width: 100px;
+    }
+
+    .tj-gtku-section .gtku-stat-number {
+        font-size: 26px;
+    }
+}
+
+
+/* SEO Audit popup (site-wide) */
+
+.sap-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(12, 30, 33, 0.65);
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    font-family: var(--tj-ff-body);
+}
+
+.sap-overlay.is-open {
+    display: flex;
+    opacity: 1;
+}
+
+body.sap-no-scroll {
+    overflow: hidden;
+}
+
+.sap-modal {
+    position: relative;
+    width: 100%;
+    max-width: 920px;
+    max-height: 92vh;
+    overflow-y: auto;
+    background: var(--tj-color-common-white);
+    border-radius: 20px;
+    box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.5);
+}
+
+.sap-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--tj-color-common-white);
+    border: 1px solid var(--tj-color-border-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tj-color-heading-primary);
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+
+.sap-close:hover {
+    background: var(--tj-color-theme-primary);
+    border-color: var(--tj-color-theme-primary);
+    color: var(--tj-color-common-white);
+}
+
+.sap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* LEFT: promo panel */
+
+.sap-left {
+    background: var(--tj-color-grey-1);
+    padding: 36px 32px;
+    border-radius: 20px 0 0 20px;
+}
+
+.sap-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: var(--tj-color-common-white);
+    border: 1px solid rgba(45, 60, 123, 0.35);
+    color: var(--tj-color-theme-primary);
+    font-size: 12px;
+    font-weight: var(--tj-fw-bold);
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.sap-heading {
+    font-family: var(--tj-ff-heading);
+    font-size: 26px;
+    font-weight: var(--tj-fw-bold);
+    color: var(--tj-color-heading-primary);
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+.sap-heading span {
+    color: var(--tj-color-theme-primary);
+}
+
+.sap-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--tj-color-text-body);
+    margin: 0 0 20px;
+}
+
+.sap-desc strong {
+    color: var(--tj-color-heading-primary);
+}
+
+.sap-checklist-box {
+    background: var(--tj-color-common-white);
+    border: 1px solid var(--tj-color-border-1);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 22px;
+}
+
+.sap-checklist-title {
+    font-size: 13px;
+    font-weight: var(--tj-fw-bold);
+    color: var(--tj-color-heading-primary);
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--tj-color-border-1);
+}
+
+.sap-checklist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sap-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13.5px;
+    color: var(--tj-color-text-body);
+}
+
+.sap-checklist li svg {
+    flex-shrink: 0;
+    color: var(--tj-color-theme-primary);
+}
+
+.sap-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.sap-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.sap-stat svg {
+    color: var(--tj-color-theme-primary);
+    margin-bottom: 2px;
+}
+
+.sap-stat-num {
+    font-family: var(--tj-ff-heading);
+    font-size: 18px;
+    font-weight: var(--tj-fw-bold);
+    color: var(--tj-color-heading-primary);
+}
+
+.sap-stat-label {
+    font-size: 11px;
+    color: var(--tj-color-text-body);
+}
+
+.sap-whatsapp-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--tj-color-common-white);
+    border: 1px solid var(--tj-color-border-1);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 6px;
+}
+
+.sap-whatsapp-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sap-whatsapp-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.sap-whatsapp-text strong {
+    color: var(--tj-color-heading-primary);
+    font-size: 13px;
+}
+
+.sap-whatsapp-text span {
+    color: var(--tj-color-text-body);
+}
+
+.sap-whatsapp-btn {
+    flex-shrink: 0;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #25D366;
+    color: #128C7E;
+    font-size: 12px;
+    font-weight: var(--tj-fw-sbold);
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.sap-whatsapp-btn:hover {
+    background: #25D366;
+    color: var(--tj-color-common-white);
+}
+
+.sap-whatsapp-caption {
+    font-size: 11px;
+    color: var(--tj-color-theme-dark-4);
+    margin: 0 0 20px 48px;
+}
+
+.sap-trust {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--tj-color-theme-dark-4);
+    padding-top: 16px;
+    border-top: 1px dashed var(--tj-color-border-1);
+    text-align: center;
+}
+
+/* RIGHT: form */
+
+.sap-right {
+    padding: 36px 32px;
+}
+
+.sap-form-title {
+    font-family: var(--tj-ff-heading);
+    font-size: 20px;
+    font-weight: var(--tj-fw-bold);
+    color: var(--tj-color-heading-primary);
+    margin: 0 0 8px;
+}
+
+.sap-form-sub {
+    font-size: 13px;
+    color: var(--tj-color-text-body);
+    margin: 0 0 20px;
+}
+
+.sap-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.sap-form-group {
+    margin-bottom: 14px;
+}
+
+.sap-form-group label {
+    display: block;
+    font-size: 12.5px;
+    font-weight: var(--tj-fw-sbold);
+    color: var(--tj-color-heading-primary);
+    margin-bottom: 6px;
+}
+
+.sap-required {
+    color: #EA4335;
+}
+
+.sap-form-group input,
+.sap-form-group select,
+.sap-form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--tj-color-border-1);
+    border-radius: 8px;
+    font-size: 13.5px;
+    color: var(--tj-color-heading-primary);
+    font-family: var(--tj-ff-body);
+    background: var(--tj-color-common-white);
+    transition: border-color 0.2s ease;
+}
+
+.sap-form-group textarea {
+    resize: vertical;
+}
+
+.sap-form-group input:focus,
+.sap-form-group select:focus,
+.sap-form-group textarea:focus {
+    outline: none;
+    border-color: var(--tj-color-theme-primary);
+}
+
+.sap-submit {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: var(--tj-color-theme-primary);
+    color: var(--tj-color-common-white);
+    font-size: 15px;
+    font-weight: var(--tj-fw-sbold);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.sap-submit:hover {
+    background: var(--tj-color-theme-dark);
+}
+
+.sap-submit:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+/* Popup form is not shown on mobile devices (JS also skips it there —
+   this is a CSS-level safety net in case that ever changes) */
+@media (max-width: 767px) {
+    .sap-overlay {
+        display: none !important;
+    }
+}
+
+
+/* Proposal form (.uw2-*, service-form.css): First/Last name stay side by
+   side down to very narrow phones and get too cramped to type in */
+@media (max-width: 420px) {
+    .uw2-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+
+/* ==========================================================================
+   Why Choose Us (.tj-why-choose-section, .wcu-*)
+   components/Home/why-choose-us.blade.php + partials/why-choose-item.blade.php
+   ========================================================================== */
+
+.tj-why-choose-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--tj-color-common-white) 0%, var(--tj-color-grey-1) 100%);
+}
+
+.tj-why-choose-section::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    inset-inline-end: -120px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(45, 60, 123, 0.10), transparent);
+    pointer-events: none;
+}
+
+.tj-why-choose-section::after {
+    content: "";
+    position: absolute;
+    bottom: -140px;
+    inset-inline-start: -140px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(45, 60, 123, 0.08), transparent);
+    pointer-events: none;
+}
+
+.tj-why-choose-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Heading */
+
+.wcu-heading-wrap {
+    max-width: 700px;
+    margin-bottom: 48px;
+}
+
+.wcu-heading-wrap .sub-title {
+    gap: 8px;
+}
+
+.wcu-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--tj-color-theme-primary);
+    box-shadow: 0 0 0 4px rgba(45, 60, 123, 0.18);
+}
+
+.wcu-desc {
+    margin: 16px auto 0;
+    max-width: 620px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--tj-color-text-body);
+}
+
+/* Two-column accordion grid */
+
+.wcu-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 24px;
+    align-items: start;
+}
+
+@media (max-width: 767px) {
+    .wcu-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.wcu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wcu-item {
+    background: var(--tj-color-common-white);
+    border: 1px solid var(--tj-color-border-1);
+    border-radius: 14px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.wcu-item:hover {
+    border-color: var(--tj-color-theme-primary);
+}
+
+.wcu-item.active {
+    border-color: var(--tj-color-theme-primary);
+    background: var(--tj-color-common-white);
+    box-shadow: 0 16px 40px rgba(24, 41, 44, 0.08);
+}
+
+.wcu-item-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 18px 20px;
+    background: none;
+    border: none;
+    margin: 0;
+    text-align: start;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+.wcu-badge-circle {
+    position: relative;
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--tj-color-grey-1);
+    border: 1.5px solid var(--tj-color-border-1);
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.wcu-num {
+    font-family: var(--tj-ff-heading);
+    font-size: 15px;
+    font-weight: var(--tj-fw-sbold);
+    color: var(--tj-color-heading-primary);
+    transition: opacity 0.2s ease;
+}
+
+.wcu-check {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.wcu-item.active .wcu-badge-circle {
+    background: var(--tj-color-theme-primary);
+    border-color: var(--tj-color-theme-primary);
+}
+
+.wcu-item.active .wcu-num {
+    opacity: 0;
+}
+
+.wcu-item.active .wcu-check {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wcu-item-title {
+    flex: 1 1 auto;
+    margin: 0;
+    font-size: 18px;
+    font-weight: var(--tj-fw-sbold);
+    line-height: 1.4;
+    color: var(--tj-color-heading-primary);
+}
+
+.wcu-item.active .wcu-item-title {
+    color: var(--tj-color-theme-primary);
+}
+
+.wcu-chevron-wrap {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: var(--tj-color-text-body-4);
+    transition: transform 0.3s ease, color 0.25s ease;
+}
+
+.wcu-item.active .wcu-chevron-wrap {
+    transform: rotate(180deg);
+    color: var(--tj-color-theme-primary);
+}
+
+.wcu-item-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.wcu-item.active .wcu-item-body {
+    grid-template-rows: 1fr;
+}
+
+.wcu-item-body-inner {
+    overflow: hidden;
+}
+
+.wcu-item-desc {
+    margin: 0;
+    padding: 0 20px 20px 78px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--tj-color-text-body);
+}
+
+@media (max-width: 575px) {
+    .wcu-item-desc {
+        padding-inline-start: 20px;
+    }
+}
+
+
+/* Home CTA section — richer content + polish */
+
+.cta-area {
+    background-image:
+        radial-gradient(closest-side at 100% 0%, rgba(255, 255, 255, 0.12), transparent),
+        linear-gradient(135deg, #ea4335 0%, #d33426 100%);
+}
+
+.cta-area .cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cta-eyebrow {
+    display: inline-block;
+    padding: 6px 16px;
+    margin-bottom: 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    color: var(--tj-color-common-white);
+    font-size: 13px;
+    font-weight: var(--tj-fw-sbold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cta-area .cta-content .title {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.cta-desc {
+    max-width: 440px;
+    margin: 0 0 22px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.cta-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    margin: 0 0 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.cta-points li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--tj-color-common-white);
+    font-size: 14px;
+    font-weight: var(--tj-fw-medium);
+}
+
+.cta-points li i {
+    color: var(--tj-color-common-white);
+    font-size: 15px;
+}
+
+.cta-img {
+    position: relative;
+}
+
+.cta-img-badge {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background: var(--tj-color-common-white);
+    box-shadow: 0 16px 40px -12px rgba(12, 30, 33, 0.4);
+}
+
+.cta-img-badge-num {
+    color: var(--tj-color-theme-dark);
+    font-family: var(--tj-ff-heading);
+    font-size: 24px;
+    font-weight: var(--tj-fw-black);
+    line-height: 1.1;
+}
+
+.cta-img-badge-label {
+    color: var(--tj-color-text-body);
+    font-size: 12px;
+    font-weight: var(--tj-fw-medium);
+}
+
+@media (max-width: 991px) {
+    .cta-area .cta-content .title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cta-img-badge {
+        left: 16px;
+        bottom: 16px;
+        padding: 10px 14px;
+    }
+
+    .cta-img-badge-num {
+        font-size: 20px;
+    }
+}
+
+

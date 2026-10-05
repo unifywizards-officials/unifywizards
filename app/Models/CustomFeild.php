@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class CustomFeild extends Model
+{
+    use HasFactory;
+    protected $table = 'custom_feilds';
+    protected $fillable = [
+        'feild_name',
+    ];
+
+}

@@ -1,0 +1,170 @@
+        .blog-copy-connect-block {
+            background: #fff;
+            border: 1px solid rgba(45, 57, 84, .08);
+            border-radius: 24px;
+            box-shadow: 0 30px 60px rgba(11, 22, 57, .08);
+            padding: 28px 26px;
+            margin-bottom: 28px;
+        }
+
+        .blog-copy-connect-block h4 {
+            font-size: 1.25rem;
+            color: #13215f;
+            margin-bottom: 14px;
+            letter-spacing: -.02em;
+        }
+
+        .blog-copy-connect-block p {
+            color: #6d7394;
+            font-size: .95rem;
+            line-height: 1.75;
+            margin-bottom: 24px;
+        }
+
+        .blog-copy-connect-field {
+            margin-bottom: 18px;
+        }
+
+        .blog-copy-connect-field label {
+            display: block;
+            font-size: .85rem;
+            color: #4e5679;
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: .01em;
+        }
+
+        .blog-copy-connect-field input,
+        .blog-copy-connect-field select,
+        .blog-copy-connect-field textarea {
+            width: 100%;
+            border: 1px solid #e7ecf7;
+            border-radius: 14px;
+            padding: 13px 16px;
+            background: #fbfcff;
+            color: #26304d;
+            font-size: .95rem;
+            transition: border-color .25s ease, box-shadow .25s ease;
+            resize: vertical;
+        }
+
+        .blog-copy-connect-field input:focus,
+        .blog-copy-connect-field select:focus,
+        .blog-copy-connect-field textarea:focus {
+            outline: none;
+            border-color: #2d4cff;
+            box-shadow: 0 0 0 4px rgba(45, 76, 255, .1);
+        }
+
+        .blog-copy-connect-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #1b3cd8 0%, #1a55ee 100%);
+            color: #fff;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+            box-shadow: 0 16px 28px rgba(27, 60, 216, .18);
+            text-decoration: none;
+        }
+
+        .blog-copy-connect-btn:hover {
+            transform: translateY(-1px);
+            background: linear-gradient(135deg, #0f2dba 0%, #163fd4 100%);
+            box-shadow: 0 20px 36px rgba(27, 60, 216, .24);
+        }
+
+        .blog-copy-connect-note {
+            margin-top: 18px;
+            font-size: .85rem;
+            color: #6d7394;
+            line-height: 1.6;
+        }
+
+        .hover-font-1-1x {
+            font-size: 1rem;
+            display: block;
+            color: #13215f;
+            text-decoration: none;
+            transition: color .2s ease, padding-left .2s ease;
+            line-height: 1.5;
+            padding: 4px 0;
+        }
+
+        .hover-font-1-1x:hover {
+            color: #2d4cff;
+            padding-left: 6px;
+        }
+
+        .hover-font-1-1x.active {
+            color: #2d4cff;
+            font-weight: 700;
+            padding-left: 6px;
+        }
+
+        .headings-main a {
+            margin: 8px 0px;
+        }
+
+        .blog-content-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .blog-content-list .toc-h3 {
+            padding-left: 14px;
+            font-size: .9rem !important;
+            color: #4e5679;
+        }
+
+        .post-details-wrapper .blog-images img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+
+        .tj-header-blog-img {
+    width: 100%;
+    max-width: 560px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 991px) {
+    .tj-header-blog-img {
+        height: 240px;
+        margin-top: 24px;
+    }
+}
+
+
+.tj-page-header-sm {
+    position: relative;
+    padding: 80px 0 70px;          /* pehle se kaafi kam height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Title thoda chhota aur clean */
+.tj-page-header-sm .tj-page-title {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.3;
+    color: #fff;
+}
+
+/* Mobile par aur compact */
+@media (max-width: 768px) {
+    .tj-page-header-sm {
+        padding: 60px 0 50px;
+    }
+}
